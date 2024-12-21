@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins, Syne } from "next/font/google";
 import "./globals.css";
+import Header from "@/sections/Header";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const poppins = Poppins({
   subsets: ["latin"],
+  variable: "--font-poppins",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const syne = Syne({
   subsets: ["latin"],
+  variable: "--font-oswald",
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -25,8 +27,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        suppressHydrationWarning
+        className={`${poppins.variable} ${syne.variable} antialiased bg-gradient-to-tr from-[#02010A] to-[#04052E] font-poppins min-h-screen text-white `}
       >
+        <div className=" absolute inset-0 h-screen overflow-x-clip opacity-70 -z-10">
+          <div className="absolute inset-0 size-[620px] border top-2/3 left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/5 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/5"></div>
+          <div className="absolute inset-0 size-[820px] border top-2/3  left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/5 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/5"></div>
+          <div className="absolute inset-0 size-[1020px] border top-2/3  left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/5 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/5"></div>
+          <div className="absolute inset-0 size-[1220px] border top-2/3  left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/5 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/5"></div>
+          <div className="absolute inset-0 size-[1420px] border top-2/3  left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/5 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/5"></div>
+          <div className="absolute  size-[1100px] bg-gradient-to-tl from-blue-800 to-transparent -bottom-2/3 -right-[500px]  blur-3xl rounded-full"></div>
+        </div>
+        <Header></Header>
         {children}
       </body>
     </html>

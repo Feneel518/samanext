@@ -2,20 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  .gray-grad {
+    @apply bg-gradient-to-br from-white to-[#71717a] text-transparent bg-clip-text;
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  .brand-grad {
+    @apply bg-gradient-to-br from-[#4AD4E4] to-[#4972e4] text-transparent bg-clip-text;
+  }
 }
