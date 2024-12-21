@@ -16,6 +16,7 @@ export default {
       colors: {
         background: "#04052E",
         foreground: "#02010A",
+        samaPrimary: "#4972e4",
       },
       borderRadius: {
         lg: "var(--radius)",

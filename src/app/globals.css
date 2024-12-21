@@ -4,8 +4,11 @@
 
 @layer base {
   .gray-grad {
-    @apply bg-gradient-to-br from-white to-[#71717a] text-transparent bg-clip-text;
+    @apply bg-gradient-to-br from-black to-gray-500  text-transparent bg-clip-text;
   }
+  /* .gray-grad {
+    @apply bg-gradient-to-br from-white to-[#71717a] text-transparent bg-clip-text;
+  } */
   .brand-grad {
     @apply bg-gradient-to-br from-[#4AD4E4] to-[#4972e4] text-transparent bg-clip-text;
   }

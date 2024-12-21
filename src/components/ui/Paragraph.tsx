@@ -10,12 +10,20 @@ const Paragraph: FC<ParagraphProps> = ({ children, className }) => {
   return (
     <div
       className={cn(
-        "text-lg lg:text-xl text-pretty text-gray-400 font-light",
+        "text-lg lg:text-xl text-pretty text-gray-700 font-light",
         className
       )}
     >
       {children}
     </div>
+    // <div
+    //   className={cn(
+    //     "text-lg lg:text-xl text-pretty text-gray-400 font-light",
+    //     className
+    //   )}
+    // >
+    //   {children}
+    // </div>
   );
 };
 

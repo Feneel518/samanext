@@ -18,7 +18,7 @@ const ShinyButton: FC<ShinyButtonProps> = ({
     <Link
       href={href ? href : "#"}
       className={cn(
-        "group relative flex transform items-center justify-center gap-2 overflow-hidden whitespace-nowrap rounded-md border border-white bg-slate-100 dark:bg-robin_egg_blue-900 px-8 text-base/7 font-medium text-sama-secondary transition-all duration-300 hover:ring-2 hover:ring-brand-700 hover:ring-offset-2",
+        "group relative flex transform items-center justify-center gap-2 overflow-hidden whitespace-nowrap rounded-md border border-white bg-samaPrimary dark:bg-robin_egg_blue-900 px-8 text-base/7 font-medium text-sama-secondary transition-all duration-300 hover:ring-2 hover:ring-brand-700 hover:ring-offset-2",
         className
       )}
       {...props}

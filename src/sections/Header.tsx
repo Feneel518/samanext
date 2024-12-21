@@ -66,7 +66,7 @@ export const Header = () => {
   return (
     <>
       <header className="  w-full px-8 ">
-        <div className="h-18 flex items-center justify-between border-b  border-gray-200/20 px-">
+        <div className="h-18 flex items-center justify-between border-b  border-gray-900/50 px-">
           {/* logo */}
           <div className="flex gap-4 items-center ">
             <Link href={"/"} className="size-24 relative ">
@@ -89,9 +89,9 @@ export const Header = () => {
                   key={link.id}
                   href={link.link}
                   className={cn(
-                    "p-2  delay-75 hover:text-white text-sm uppercase tracking-widest text-white/50 hover:underline hover:underline-offset-4",
+                    "p-2  delay-75 hover:text-blue-950 text-sm uppercase tracking-widest text-black/80 hover:underline hover:underline-offset-4",
                     {
-                      "font-bold  text-sama-primary underline underline-offset-4  ":
+                      "font-bold  text-blue-950 underline underline-offset-4  ":
                         pathname === link.link,
                     }
                   )}
@@ -111,7 +111,7 @@ export const Header = () => {
               <SheetTrigger>
                 <Menu strokeWidth={1} size={30}></Menu>
               </SheetTrigger>
-              <SheetContent className="bg-gradient-to-b from-foreground to-background text-white">
+              <SheetContent className="bg-gradient-to-b from-foreground to-background text-balck">
                 <SheetHeader>
                   <SheetTitle className="text-white text-syne text-2xl">
                     SAMA Nextgen

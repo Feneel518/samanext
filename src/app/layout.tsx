@@ -28,19 +28,36 @@ export default function RootLayout({
     <html lang="en">
       <body
         suppressHydrationWarning
-        className={`${poppins.variable} ${syne.variable} antialiased bg-gradient-to-tr from-[#02010A] to-[#04052E] font-poppins min-h-screen text-white `}
+        className={`${poppins.variable} ${syne.variable} antialiased bg-gradient-to-tr from-white to-blue-100 font-poppins min-h-screen text-blue-950 `}
       >
-        <div className=" absolute inset-0 h-screen overflow-x-clip opacity-70 -z-10">
-          <div className="absolute inset-0 size-[620px] border top-2/3 left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/5 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/5"></div>
-          <div className="absolute inset-0 size-[820px] border top-2/3  left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/5 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/5"></div>
-          <div className="absolute inset-0 size-[1020px] border top-2/3  left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/5 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/5"></div>
-          <div className="absolute inset-0 size-[1220px] border top-2/3  left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/5 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/5"></div>
-          <div className="absolute inset-0 size-[1420px] border top-2/3  left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/5 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/5"></div>
-          <div className="absolute  size-[1100px] bg-gradient-to-tl from-blue-800 to-transparent -bottom-2/3 -right-[500px]  blur-3xl rounded-full"></div>
+        <div className=" absolute inset-0 h-screen overflow-x-clip opacity-100 -z-10">
+          <div className="absolute inset-0 size-[620px] border top-2/3 left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/10 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/10"></div>
+          <div className="absolute inset-0 size-[820px] border top-2/3  left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/10 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/10"></div>
+          <div className="absolute inset-0 size-[1020px] border top-2/3  left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/10 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/10"></div>
+          <div className="absolute inset-0 size-[1220px] border top-2/3  left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/10 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/10"></div>
+          <div className="absolute inset-0 size-[1420px] border top-2/3  left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/10 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/10"></div>
+          <div className="absolute  size-[1100px] bg-gradient-to-tl from-blue-300 to-transparent -bottom-2/3 -right-[500px]  blur-3xl rounded-full"></div>
         </div>
         <Header></Header>
         {children}
       </body>
     </html>
+    // <html lang="en">
+    //   <body
+    //     suppressHydrationWarning
+    //     className={`${poppins.variable} ${syne.variable} antialiased bg-gradient-to-tr from-[#02010A] to-[#04052E] font-poppins min-h-screen text-white `}
+    //   >
+    //     <div className=" absolute inset-0 h-screen overflow-x-clip opacity-100 -z-10">
+    //       <div className="absolute inset-0 size-[620px] border top-2/3 left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/5 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/5"></div>
+    //       <div className="absolute inset-0 size-[820px] border top-2/3  left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/5 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/5"></div>
+    //       <div className="absolute inset-0 size-[1020px] border top-2/3  left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/5 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/5"></div>
+    //       <div className="absolute inset-0 size-[1220px] border top-2/3  left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/5 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/5"></div>
+    //       <div className="absolute inset-0 size-[1420px] border top-2/3  left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/5 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/5"></div>
+    //       <div className="absolute  size-[1100px] bg-gradient-to-tl from-blue-800 to-transparent -bottom-2/3 -right-[500px]  blur-3xl rounded-full"></div>
+    //     </div>
+    //     <Header></Header>
+    //     {children}
+    //   </body>
+    // </html>
   );
 }

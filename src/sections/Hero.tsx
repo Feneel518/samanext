@@ -37,7 +37,7 @@ const Hero: FC<HeroProps> = ({}) => {
                 </Paragraph>
                 <ShinyButton
                   href="/products"
-                  className=" md:max-w-80 text-foreground h-12"
+                  className=" md:max-w-80 text-white h-12"
                 >
                   Expore More
                 </ShinyButton>
