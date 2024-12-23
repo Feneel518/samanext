@@ -107,7 +107,7 @@ const Hero: FC<HeroProps> = ({}) => {
               </div>
             </div>
           </SliderMainItem>
-          <SliderMainItem className="bg-transparent  h-[700px]  flex items-center justify-center">
+          <SliderMainItem className="bg-transparent  h-[700px]  flex lg:flex-row flex-col items-center justify-center">
             <Heading className="w-1/3">
               <h1>
                 The future of voice is{" "}

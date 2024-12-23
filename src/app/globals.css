@@ -17,3 +17,16 @@
     @apply bg-gradient-to-br from-[#4AD4E4] to-[#4972e4] text-transparent bg-clip-text;
   }
 }
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
