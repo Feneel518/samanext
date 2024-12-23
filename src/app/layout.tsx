@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Poppins, Syne } from "next/font/google";
 import "./globals.css";
 import Header from "@/sections/Header";
+import { ThemeProvider } from "@/components/theme-provider";
+import Footer from "@/sections/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -25,21 +27,30 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html suppressHydrationWarning lang="en">
       <body
         suppressHydrationWarning
-        className={`${poppins.variable} ${syne.variable} antialiased bg-gradient-to-tr from-white to-blue-100 font-poppins min-h-screen text-blue-950 `}
+        className={`${poppins.variable} ${syne.variable} antialiased bg-gradient-to-tr from-white to-blue-100 font-poppins min-h-screen text-blue-950 dark:bg-gradient-to-tr dark:from-[#02010A] dark:to-[#04052E] dark:text-white`}
       >
-        <div className=" absolute inset-0 h-screen overflow-x-clip opacity-100 -z-10">
-          <div className="absolute inset-0 size-[620px] border top-2/3 left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/10 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/10"></div>
-          <div className="absolute inset-0 size-[820px] border top-2/3  left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/10 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/10"></div>
-          <div className="absolute inset-0 size-[1020px] border top-2/3  left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/10 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/10"></div>
-          <div className="absolute inset-0 size-[1220px] border top-2/3  left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/10 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/10"></div>
-          <div className="absolute inset-0 size-[1420px] border top-2/3  left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/10 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/10"></div>
-          <div className="absolute  size-[1100px] bg-gradient-to-tl from-blue-300 to-transparent -bottom-2/3 -right-[500px]  blur-3xl rounded-full"></div>
-        </div>
-        <Header></Header>
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className=" absolute inset-0 h-screen overflow-x-clip opacity-100 -z-10 overflow-hidden">
+            <div className="absolute inset-0 size-[620px] border top-2/3 left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/10 dark:border-blue-500/5 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/10 dark:shadow-blue-500/5"></div>
+            <div className="absolute inset-0 size-[820px] border top-2/3  left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/10 dark:border-blue-500/5 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/10 dark:shadow-blue-500/5"></div>
+            <div className="absolute inset-0 size-[1020px] border top-2/3  left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/10 dark:border-blue-500/5 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/10 dark:shadow-blue-500/5"></div>
+            <div className="absolute inset-0 size-[1220px] border top-2/3  left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/10 dark:border-blue-500/5 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/10 dark:shadow-blue-500/5"></div>
+            <div className="absolute inset-0 size-[1420px] border top-2/3  left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/10 dark:border-blue-500/5 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/10 dark:shadow-blue-500/5"></div>
+            <div className="absolute  size-[1100px] bg-gradient-to-tl from-blue-300 to-transparent dark:bg-gradient-to-tl dark:from-blue-800/55  dark:to-transparent -bottom-2/3 -right-[500px]  blur-3xl rounded-full"></div>
+          </div>
+
+          <Header></Header>
+          <div className="flex-1">{children}</div>
+          <Footer></Footer>
+        </ThemeProvider>
       </body>
     </html>
     // <html lang="en">

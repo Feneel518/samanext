@@ -354,16 +354,16 @@ const CarouselIndicator = forwardRef<
       ref={ref}
       size="icon"
       className={cn(
-        "size-12 rounded-full bg-transparent text-xl",
-        "data-[active='false']:text-white/50 data-[active='true']:text-white",
+        "h-[4px] w-8 rounded-full  ",
+        "data-[active='false']:dark:bg-white/50 data-[active='false']:bg-background/20  data-[active='true']:bg-background data-[active='true']:dark:bg-white",
         className
       )}
       data-active={isSlideActive}
       onClick={() => onThumbClick(index)}
       {...props}
     >
-      {index + 1}
-      {/* <span className="sr-only">slide {index + 1} </span> */}
+      {/* {index + 1} */}
+      <span className="sr-only">slide {index + 1} </span>
     </Button>
   );
 });

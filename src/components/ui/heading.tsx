@@ -10,7 +10,7 @@ const Heading: FC<headingProps> = ({ children, className }) => {
   return (
     <div
       className={cn(
-        "font-syne text-5xl gray-grad sm:text-6xl lg:text-7xl",
+        "font-syne text-5xl dark:gray-grad dark-gray-grad sm:text-6xl lg:text-7xl",
         className
       )}
     >

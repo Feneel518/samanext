@@ -1,7 +1,9 @@
 import { AnimatedBeamDemo } from "@/components/AnimatedBeams";
 import {
   Carousel,
+  CarouselIndicator,
   CarouselMainContainer,
+  CarouselThumbsContainer,
   SliderMainItem,
 } from "@/components/ui/carousel";
 import Heading from "@/components/ui/heading";
@@ -15,7 +17,11 @@ interface HeroProps {}
 const Hero: FC<HeroProps> = ({}) => {
   return (
     <section className="px-4 lg:px-8 py-10">
-      <Carousel>
+      <Carousel
+        autoplay={true}
+        autoplayInterval={10000}
+        carouselOptions={{ loop: true }}
+      >
         <CarouselMainContainer>
           <SliderMainItem className="bg-transparent  h-[700px]  flex items-center justify-center">
             <div className="grid lg:grid-cols-2 gap-10 lg:items-center">
@@ -71,7 +77,7 @@ const Hero: FC<HeroProps> = ({}) => {
                   </p>
                 </Paragraph>
               </div>
-              <div className="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center justify-center">
+              {/* <div className="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center justify-center">
                 <Heading className=" text-7xl lg:text-9xl text-center hover:brand-grad transition-all duration-300 ease-in-out cursor-pointer hover:scale-105">
                   <h1>Aster</h1>
                 </Heading>
@@ -84,18 +90,64 @@ const Hero: FC<HeroProps> = ({}) => {
                 <Heading className="text-7xl lg:text-9xl text-center hover:brand-grad transition-all duration-300 ease-in-out cursor-pointer hover:scale-105">
                   <h1>Eruca</h1>
                 </Heading>
+              </div> */}
+              <div className="grid items-center justify-center lg:grid-cols-2 gap-10 lg:gap-20">
+                <Heading className=" text-7xl lg:text-9xl text-center hover:brand-grad dark:hover:brand-grad transition-all duration-300 ease-in-out cursor-pointer hover:scale-105 ">
+                  <h1>Aster</h1>
+                </Heading>
+                <Heading className="text-7xl lg:text-9xl text-center hover:brand-grad dark:hover:brand-grad transition-all duration-300 ease-in-out cursor-pointer hover:scale-105">
+                  <h1>Bellis</h1>
+                </Heading>
+                <Heading className="text-7xl lg:text-9xl text-center hover:brand-grad dark:hover:brand-grad transition-all duration-300 ease-in-out cursor-pointer hover:scale-105">
+                  <h1>Dahlia</h1>
+                </Heading>
+                <Heading className="text-7xl lg:text-9xl text-center hover:brand-grad dark:hover:brand-grad transition-all duration-300 ease-in-out cursor-pointer hover:scale-105">
+                  <h1>Eruca</h1>
+                </Heading>
               </div>
             </div>
           </SliderMainItem>
           <SliderMainItem className="bg-transparent  h-[700px]  flex items-center justify-center">
-            <div className="">
-              <Heading>
-                <h1>The future of voice is offline and private</h1>
-              </Heading>
-              {/* <AnimatedBeamDemo></AnimatedBeamDemo> */}
+            <Heading className="w-1/3">
+              <h1>
+                The future of voice is{" "}
+                <span className="bg-gradient-to-br from-[#4AD4E4] to-[#4972e4] text-transparent bg-clip-text">
+                  Offline
+                </span>{" "}
+                and{" "}
+                <span className="bg-gradient-to-br from-[#4AD4E4] to-[#4972e4] text-transparent bg-clip-text">
+                  Private
+                </span>
+              </h1>
+            </Heading>
+
+            <div className="relative w-[1000px] aspect-[1020/596] dark:scale-100 scale-0 hidden dark:flex">
+              <Image
+                alt="Offline Represntation"
+                src={"/OfflineWhite.png"}
+                fill
+                className="object-contain"
+              ></Image>
             </div>
+            <div className="relative w-[1000px] aspect-[1020/596] dark:scale-0 scale-100 dark:hidden">
+              <Image
+                alt="Offline Represntation"
+                src={"/Offline.png"}
+                fill
+                className="object-contain"
+              ></Image>
+            </div>
+            {/* <AnimatedBeamDemo></AnimatedBeamDemo> */}
           </SliderMainItem>
         </CarouselMainContainer>
+        <div className="absolute -bottom-2 left-1/2 -translate-x-1/2">
+          <CarouselThumbsContainer className="gap-x-1 ">
+            {Array.from({ length: 3 }).map((_, index) => (
+              <CarouselIndicator key={index} index={index} />
+            ))}
+          </CarouselThumbsContainer>
+          {/* </div> */}
+        </div>
       </Carousel>
     </section>
   );

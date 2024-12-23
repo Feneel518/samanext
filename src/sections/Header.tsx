@@ -17,6 +17,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import { ModeToggle } from "@/components/ModeToggle";
 
 const LINKS = [
   {
@@ -65,11 +66,11 @@ export const Header = () => {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   return (
     <>
-      <header className="  w-full px-8 ">
-        <div className="h-18 flex items-center justify-between border-b  border-gray-900/50 px-">
+      <header className="  w-full px-8 bg-background dark:bg-white sticky top-0 z-[1000]">
+        <div className=" flex items-center justify-between border-b  border-gray-900/50 px-">
           {/* logo */}
           <div className="flex gap-4 items-center ">
-            <Link href={"/"} className="size-24 relative ">
+            <Link href={"/"} className="size-20 md:size-24 relative ">
               <Image
                 src={logoImage}
                 alt="SAMA Logo"
@@ -89,9 +90,9 @@ export const Header = () => {
                   key={link.id}
                   href={link.link}
                   className={cn(
-                    "p-2  delay-75 hover:text-blue-950 text-sm uppercase tracking-widest text-black/80 hover:underline hover:underline-offset-4",
+                    "p-2  delay-75 dark:hover:text-blue-950 text-white text-sm uppercase tracking-widest dark:text-black/80 text-white/80 hover:underline hover:underline-offset-4",
                     {
-                      "font-bold  text-blue-950 underline underline-offset-4  ":
+                      "font-bold  dark:text-blue-950 text-white underline underline-offset-4  ":
                         pathname === link.link,
                     }
                   )}
@@ -102,6 +103,7 @@ export const Header = () => {
                 </Link>
               );
             })}
+            <ModeToggle></ModeToggle>
           </div>
           {/* Middle nav */}
 
@@ -109,27 +111,34 @@ export const Header = () => {
           <div className="lg:hidden">
             <Sheet>
               <SheetTrigger>
-                <Menu strokeWidth={1} size={30}></Menu>
+                <Menu
+                  strokeWidth={1}
+                  size={30}
+                  className="text-white dark:text-background"
+                ></Menu>
               </SheetTrigger>
-              <SheetContent className="bg-gradient-to-b from-foreground to-background text-balck">
+              <SheetContent className="dark:bg-gradient-to-b dark:from-foreground dark:to-background dark:text-white text-black h-full ">
                 <SheetHeader>
                   <SheetTitle className="text-white text-syne text-2xl">
                     SAMA Nextgen
                   </SheetTitle>
                   <div className="w-full h-[1px] border-b border-gray-200/20"></div>
 
-                  <div className="flex flex-col mt-8">
+                  <div className="flex flex-col   items-center mt-8">
                     {LINKS.map((link) => {
                       return (
                         <Link
                           href={link.link}
                           key={link.id}
-                          className="p-2  delay-75 hover:text-white text-sm uppercase tracking-widest text-white/50"
+                          className="p-2  delay-75 dark:hover:text-white text-sm uppercase tracking-widest dark:text-white/50 text-black text-black/50"
                         >
                           <SheetClose>{link.name}</SheetClose>
                         </Link>
                       );
                     })}
+                    <div className="mt-10">
+                      <ModeToggle></ModeToggle>
+                    </div>
                   </div>
                 </SheetHeader>
               </SheetContent>
