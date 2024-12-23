@@ -13,18 +13,13 @@ const UseCase: FC<UseCaseProps> = ({}) => {
   return (
     <section className="px-8 relative  overflow-x-clip">
       <div className="absolute inset-0  border-black ">
-        {/* <div className="absolute inset-0 size-[620px] border top-[90%] left-[1800px] -translate-x-1/2 -translate-y-1/2 border-blue-500/10 dark:border-blue-500/5 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/10 dark:shadow-blue-500/5"></div>
-        <div className="absolute inset-0 size-[820px] border top-[90%]  left-[1800px] -translate-x-1/2 -translate-y-1/2 border-blue-500/10 dark:border-blue-500/5 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/10 dark:shadow-blue-500/5"></div>
-        <div className="absolute inset-0 size-[1020px] border top-[90%]  left-[1800px] -translate-x-1/2 -translate-y-1/2 border-blue-500/10 dark:border-blue-500/5 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/10 dark:shadow-blue-500/5"></div>
-        <div className="absolute inset-0 size-[1220px] border top-[90%]  left-[1800px] -translate-x-1/2 -translate-y-1/2 border-blue-500/10 dark:border-blue-500/5 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/10 dark:shadow-blue-500/5"></div>
-        <div className="absolute inset-0 size-[1420px] border top-[90%]  left-[1800px] -translate-x-1/2 -translate-y-1/2 border-blue-500/10 dark:border-blue-500/5 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/10 dark:shadow-blue-500/5"></div> */}
         <div className="absolute  size-[1100px] bg-gradient-to-tl from-blue-300 to-transparent dark:bg-gradient-to-tl dark:from-blue-800/55  dark:to-transparent -left-[720px] top-20  blur-3xl rounded-full opacity-50"></div>
         <div className="absolute  size-[1100px] bg-gradient-to-tl from-blue-300 to-transparent dark:bg-gradient-to-tl dark:from-blue-800/55  dark:to-transparent -right-[720px] top-80  blur-3xl rounded-full opacity-90"></div>
       </div>
       <div className="pt-10 lg:pt-20">
         <div className="flex lg:flex-row flex-col gap-8 ">
           <div className="lg:w-[350px] xl:w-[550px] shrink-0  ">
-            <div className="sticky top-24">
+            <div className="sticky top-36">
               <Heading>
                 <h1>Our Products</h1>
               </Heading>
