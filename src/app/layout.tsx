@@ -30,7 +30,7 @@ export default function RootLayout({
     <html suppressHydrationWarning lang="en">
       <body
         suppressHydrationWarning
-        className={`${poppins.variable} ${syne.variable} antialiased bg-gradient-to-tr from-white to-blue-100 font-poppins min-h-screen text-blue-950 dark:bg-gradient-to-tr dark:from-[#02010A] dark:to-[#04052E] dark:text-white`}
+        className={`${poppins.variable} ${syne.variable} antialiased bg-gradient-to-tr from-white h-full to-blue-100 flex flex-col font-poppins min-h-screen text-blue-950 dark:bg-gradient-to-tr dark:from-[#02010A] dark:to-[#04052E] dark:text-white`}
       >
         <ThemeProvider
           attribute="class"
@@ -46,10 +46,18 @@ export default function RootLayout({
             <div className="absolute inset-0 size-[1420px] border top-2/3  left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/10 dark:border-blue-500/5 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/10 dark:shadow-blue-500/5"></div>
             <div className="absolute  size-[1100px] bg-gradient-to-tl from-blue-300 to-transparent dark:bg-gradient-to-tl dark:from-blue-800/55  dark:to-transparent -bottom-2/3 -right-[500px]  blur-3xl rounded-full"></div>
           </div>
-
+          <div className="fixed bottom-4 flex items-center justify-center right-4 z-[1000] size-16 rounded-full bg-white">
+            <div className="text-black sm:hidden">vsm</div>
+            <div className="text-black max-sm:hidden md:hidden">sm</div>
+            <div className="text-black max-md:hidden lg:hidden">md</div>
+            <div className="text-black max-lg:hidden xl:hidden">lg</div>
+            <div className="text-black max-xl:hidden ">xl</div>
+          </div>
           <Header></Header>
-          <div className="flex-1">{children}</div>
-          <Footer></Footer>
+          <div className=" flex-1">{children}</div>
+          <div className="place-content-end">
+            <Footer></Footer>
+          </div>
         </ThemeProvider>
       </body>
     </html>

@@ -66,8 +66,8 @@ export const Header = () => {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   return (
     <>
-      <header className="  w-full px-8 bg-background dark:bg-white sticky top-0 z-[1000]">
-        <div className=" flex items-center justify-between border-b  border-gray-900/50 px-">
+      <header className="  w-full px-8 bg-background dark:bg-white sticky top-0 z-[1000] ">
+        <div className=" flex items-center justify-between ">
           {/* logo */}
           <div className="flex gap-4 items-center ">
             <Link href={"/"} className="size-20 md:size-24 relative ">

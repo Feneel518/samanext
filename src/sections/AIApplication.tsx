@@ -8,32 +8,32 @@ interface AIApplicationProps {}
 
 const AIApplication: FC<AIApplicationProps> = ({}) => {
   return (
-    // <section className="bg-background dark:bg-white">
-    <section>
+    <section className="bg-background dark:bg-white">
+      {/* <section> */}
       <div className=" px-4 lg:px-8 grid lg:grid-cols-2 items-center pt-10 ">
         <div className=" text-center flex flex-col gap-6 lg:order-2">
-          {/* <h1 className="font-syne text-5xl gray-grad dark:dark-gray-grad sm:text-6xl lg:text-7xl"> */}
-          <Heading>
-            <h1>
-              <span className="brand-grad">Voice and AI</span>, Simplified
-            </h1>
-          </Heading>
-          <Paragraph>
-            {/* <div className="text-lg lg:text-xl  dark:text-gray-700 text-gray-400 font-light text-pretty lg:w-2/3 lg:mx-auto"> */}
+          <h1 className="font-syne text-5xl gray-grad dark:dark-gray-grad sm:text-6xl lg:text-7xl">
+            {/* <Heading> */}
+            {/* <h1> */}
+            <span className="brand-grad">Voice and AI</span>, Simplified
+          </h1>
+          {/* </Heading> */}
+          {/* <Paragraph> */}
+          <div className="text-lg lg:text-xl  dark:text-gray-700 text-gray-400 font-light text-pretty lg:w-2/3 lg:mx-auto">
             <p>
               Empower your devices with our unique embedded hardware and
               software solutions, designed to enable advanced Voice and AI
               applications for seamless functionality and innovation.
             </p>
-            {/* </div> */}
-          </Paragraph>
+          </div>
+          {/* </Paragraph> */}
         </div>
         <div className="lg:order-1 flex items-center justify-center">
           <div className="relative aspect-square size-[450px] md:size-[600px] hidden dark:flex">
-            <Image alt="Offline icons" src={"/iconsDark.png"} fill></Image>
+            <Image alt="Offline icons" src={"/iconsDark1.png"} fill></Image>
           </div>
           <div className="relative aspect-square size-[450px] md:size-[600px]  flex dark:hidden">
-            <Image alt="Offline icons" src={"/icons.png"} fill></Image>
+            <Image alt="Offline icons" src={"/iconsDark.png"} fill></Image>
           </div>
         </div>
       </div>
