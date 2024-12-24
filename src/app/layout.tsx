@@ -30,7 +30,7 @@ export default function RootLayout({
     <html suppressHydrationWarning lang="en">
       <body
         suppressHydrationWarning
-        className={`${poppins.variable} ${syne.variable} antialiased bg-gradient-to-tr from-white h-full to-blue-100 flex flex-col font-poppins min-h-screen text-blue-950 dark:bg-gradient-to-tr dark:from-[#02010A] dark:to-[#04052E] dark:text-white`}
+        className={`${poppins.variable} ${syne.variable} antialiased bg-gradient-to-tr from-white h-full to-blue-100 flex flex-col font-poppins min-h-screen text-blue-950 dark:bg-gradient-to-tr dark:from-[#02010A] dark:to-[#04052E] dark:text-white overflow-hidden`}
       >
         <ThemeProvider
           attribute="class"
@@ -38,7 +38,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className=" absolute inset-0 h-screen overflow-x-clip opacity-100 -z-10 ">
+          <div className=" absolute inset-0 h-screen overflow-x-clip opacity-100 -z-10">
             <div className="absolute inset-0 size-[620px] border top-2/3 left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/10 dark:border-blue-500/5 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/10 dark:shadow-blue-500/5"></div>
             <div className="absolute inset-0 size-[820px] border top-2/3  left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/10 dark:border-blue-500/5 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/10 dark:shadow-blue-500/5"></div>
             <div className="absolute inset-0 size-[1020px] border top-2/3  left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/10 dark:border-blue-500/5 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/10 dark:shadow-blue-500/5"></div>
