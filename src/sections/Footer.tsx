@@ -24,7 +24,7 @@ export const navItems = [
 
 export const Footer = () => {
   return (
-    <footer className="px-8 border-t dark:text-black  border bg-background dark:bg-white text-white z-[1000]  ">
+    <footer className="px-8 border-t dark:text-black   bg-background dark:bg-white text-white z-[1000]  ">
       <div className="flex py-4 items-center justify-between">
         <div className="flex flex-col items-start w-1/2 md:flex-row md:items-center">
           <div className="relative size-32">

@@ -37,8 +37,8 @@ const LINKS = [
   },
   {
     id: 2,
-    name: "Our Story",
-    link: "/our-story",
+    name: "About Us",
+    link: "/about-us",
   },
   {
     id: 3,
@@ -47,26 +47,12 @@ const LINKS = [
   },
 ];
 
-export const loginItems = [
-  {
-    buttonVariant: "tertiary",
-    name: "Login",
-    href: "#login",
-  },
-  {
-    buttonVariant: "primary",
-    name: "Sign Up",
-    href: "#sign-up",
-  },
-];
-
 export const Header = () => {
   const pathname = usePathname();
 
-  const [isMobileOpen, setIsMobileOpen] = useState(false);
   return (
     <>
-      <header className="  w-full px-8 bg-background dark:bg-white sticky top-0 z-[1000] ">
+      <header className="  w-full px-8 bg-background dark:bg-white  z-[1000] ">
         <div className=" flex items-center justify-between ">
           {/* logo */}
           <div className="flex gap-4 items-center ">

@@ -33,8 +33,11 @@ const ProductCarousel: FC<ProductCarouselProps> = ({ productComponents }) => {
         {/* {Array.from({ length: 5 }).map((_, index) => ( */}
         {productComponents.map((comp, index) => {
           return (
-            <SliderMainItem key={index} className="bg-transparent  ">
-              <div className="grid grid-cols-1 lg:grid-cols-2 items-center  justify-between pl-4 max-lg:gap-10 ">
+            <SliderMainItem
+              key={index}
+              className="bg-transparent  overflow-hidden"
+            >
+              <div className="flex flex-col justify-start pl-4 gap-10 ">
                 <div
                   className={`flex flex-col gap-8 lg:pl-20 ${
                     comp.name === "Eruca" ? "" : "max-sm:h-[650px]"
@@ -53,12 +56,12 @@ const ProductCarousel: FC<ProductCarouselProps> = ({ productComponents }) => {
                     })}
                   </ol>
                 </div>
-                <div className="relative w-[350px] h-[300px] md:w-[700px] md:h-[500px] shrink-0 lg:mx-auto ">
+                <div className="relative w-[430px]  md:w-[700px] lg:w-[600px] xl:w-[900px] aspect-[1209/817] shrink-0 lg:mx-auto rounded-2xl ">
                   <Image
                     src={comp.image}
                     alt={comp.name}
                     fill
-                    className="object-contain rounded-2xl"
+                    className="object-cover rounded-2xl"
                   ></Image>
                 </div>
               </div>

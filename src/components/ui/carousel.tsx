@@ -402,7 +402,7 @@ const CarouselPrevious = forwardRef<
       disabled={!canScroll}
       {...props}
     >
-      <ChevronLeftIcon className="h-8 w-8 text-black" />
+      <ChevronLeftIcon className="h-8 w-8 text-white" />
       <span className="sr-only">Previous slide</span>
     </Button>
   );
@@ -429,7 +429,7 @@ const CarouselNext = forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        "absolute h-10 w-10 rounded-full z-10",
+        "absolute h-10 w-10 rounded-full z-10 ",
         orientation === "vertical"
           ? "-bottom-2 left-1/2 -translate-x-1/2 rotate-90"
           : "max-sm:-right-8 -right-2 top-1/2 -translate-y-1/2",
@@ -439,7 +439,7 @@ const CarouselNext = forwardRef<
       disabled={!canScroll}
       {...props}
     >
-      <ChevronRightIcon className="h-8 w-8 text-black" />
+      <ChevronRightIcon className="h-8 w-8 text-white" />
       <span className="sr-only">Next slide</span>
     </Button>
   );
