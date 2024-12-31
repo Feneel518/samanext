@@ -20,7 +20,7 @@ const Slide3: FC<Slide3Props> = ({}) => {
         </h1>
       </Heading>
 
-      <div className="relative w-[450px] sm:w-[500px] md:w-[700px] xl:w-[1000px] aspect-[1020/596] dark:scale-100 scale-0 hidden dark:flex">
+      <div className="relative w-[300px] sm:w-[500px] md:w-[700px] xl:w-[1000px] aspect-[1020/596] dark:scale-100 scale-0 hidden dark:flex">
         <Image
           alt="Offline Represntation"
           src={"/OfflineWhite.png"}
@@ -28,7 +28,7 @@ const Slide3: FC<Slide3Props> = ({}) => {
           className="object-contain"
         ></Image>
       </div>
-      <div className="relative w-[450px] sm:w-[500px] md:w-[700px] xl:w-[1000px] aspect-[1020/596] dark:scale-0 scale-100 dark:hidden">
+      <div className="relative w-[300px] sm:w-[500px] md:w-[700px] xl:w-[1000px] aspect-[1020/596] dark:scale-0 scale-100 dark:hidden">
         <Image
           alt="Offline Represntation"
           src={"/Offline.png"}

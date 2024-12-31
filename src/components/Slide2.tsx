@@ -25,24 +25,9 @@ const Slide2: FC<Slide2Props> = ({}) => {
           </p>
         </Paragraph>
       </div>
-      <div className="relative aspect-square w-[400px] xl:w-[550px] mx-auto">
+      <div className="relative aspect-square w-[300px] sm:w-[400px] xl:w-[550px] mx-auto">
         <Image alt="Aster Module" src={"/Module.png"} fill></Image>
       </div>
-
-      {/* <div className="grid items-center justify-center grid-cols-2  lg:gap-20">
-        <Heading className=" text-7xl lg:text-9xl text-center hover:brand-grad dark:hover:brand-grad transition-all duration-300 ease-in-out cursor-pointer hover:scale-105 ">
-          <h1>Aster</h1>
-        </Heading>
-        <Heading className="text-7xl lg:text-9xl text-center hover:brand-grad dark:hover:brand-grad transition-all duration-300 ease-in-out cursor-pointer hover:scale-105">
-          <h1>Bellis</h1>
-        </Heading>
-        <Heading className="text-7xl lg:text-9xl text-center hover:brand-grad dark:hover:brand-grad transition-all duration-300 ease-in-out cursor-pointer hover:scale-105">
-          <h1>Dahlia</h1>
-        </Heading>
-        <Heading className="text-7xl lg:text-9xl text-center hover:brand-grad dark:hover:brand-grad transition-all duration-300 ease-in-out cursor-pointer hover:scale-105">
-          <h1>Eruca</h1>
-        </Heading>
-      </div> */}
     </div>
   );
 };

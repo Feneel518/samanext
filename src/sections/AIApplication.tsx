@@ -29,10 +29,10 @@ const AIApplication: FC<AIApplicationProps> = ({}) => {
           {/* </Paragraph> */}
         </div>
         <div className="lg:order-1 flex items-center justify-center">
-          <div className="relative aspect-square size-[450px] md:size-[600px] hidden dark:flex">
+          <div className="relative aspect-square size-[300px] sm:w-[450px] md:size-[600px] hidden dark:flex">
             <Image alt="Offline icons" src={"/icons2.png"} fill></Image>
           </div>
-          <div className="relative aspect-square size-[450px] md:size-[600px]  flex dark:hidden">
+          <div className="relative aspect-square size-[300px] sm:w-[450px] md:size-[600px]  flex dark:hidden">
             <Image alt="Offline icons" src={"/iconsDark2.png"} fill></Image>
           </div>
         </div>

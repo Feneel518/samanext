@@ -35,8 +35,8 @@ export const Footer = () => {
               className="object-contain"
             ></Image>
           </div>
-          <div className="max-w-[40%]">
-            <p className="text-sm ">
+          <div className="md:max-w-[40%]">
+            <p className="text-xs sm:text-sm ">
               #201, 3rd Floor, Green Glen Layout, Bellandur, Bangalore - 560103{" "}
             </p>
             <p className="text-sm ">EmailID@gmail.com</p>
