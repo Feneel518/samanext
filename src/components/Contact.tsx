@@ -10,20 +10,13 @@ const Contact: FC<ContactProps> = ({}) => {
     <div className="grid lg:grid-cols-2 justify-between min-h-80">
       <div className="flex flex-col justify-between lg:w-[850px]">
         <div className="flex flex-col gap-4">
-          <div className="uppercase">Contact</div>
-          <div className="">
-            <Heading>
-              <h1>Need Assistance?</h1>
-            </Heading>
-          </div>
           <Paragraph>
-            For inquiries about Sama, feel free to contact us. Our team is
-            available to provide information, answer questions, and assist with
-            your needs. Reach out via email, phone, or our online support portal
-            for prompt assistance.
+            <span className="text-2xl brand-grad">For any inquiries</span> ,
+            feel free to contact us. Our team is available to provide
+            information, answer questions and assist with your needs.
           </Paragraph>
         </div>
-        <div className="flex flex-col gap-4 max-lg:hidden">
+        {/* <div className="flex flex-col gap-4 max-lg:hidden">
           <p className="uppercase">Find us on</p>
           <div className="flex gap-2 shrink-0">
             <div className="p-2 size-12 flex items-center justify-center border rounded-full hover:bg-white hover:text-black transition-colors duration-200 ease-in-out cursor-pointer">
@@ -36,7 +29,7 @@ const Contact: FC<ContactProps> = ({}) => {
               FB
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="lg:w-[80%] lg:mx-auto max-lg:mt-20">
         <form className="flex flex-col gap-10">

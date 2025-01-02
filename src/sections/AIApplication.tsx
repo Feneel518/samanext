@@ -14,16 +14,16 @@ const AIApplication: FC<AIApplicationProps> = ({}) => {
         <div className=" text-center flex flex-col gap-6 lg:order-2">
           <h1 className="font-syne text-5xl gray-grad dark:dark-gray-grad sm:text-6xl lg:text-7xl">
             {/* <Heading> */}
-            {/* <h1> */}
-            <span className="brand-grad">Voice and AI</span>, Simplified
+            {/* <h1> */}SAMA NextGen'
+            <span className="brand-grad">Edge AI</span> powered offline voice
+            solutions
           </h1>
           {/* </Heading> */}
           {/* <Paragraph> */}
           <div className="text-lg lg:text-xl  dark:text-gray-700 text-gray-400 font-light text-pretty lg:w-2/3 lg:mx-auto">
             <p>
-              Empower your devices with our unique embedded hardware and
-              software solutions, designed to enable advanced Voice and AI
-              applications for seamless functionality and innovation.
+              Discover how SAMA NextGen can transform your existing products and
+              bring innovation to new products with advanced voice solutions
             </p>
           </div>
           {/* </Paragraph> */}

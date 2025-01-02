@@ -57,21 +57,20 @@ const OurJourney: FC<OurJourneyProps> = ({}) => {
                 <CardHeader className="">
                   <CardTitle>
                     <Heading className="">
-                      Revolutionizing Audio and Voice Technology
+                      Innovation in Audio and Voice Technology
                     </Heading>
                   </CardTitle>
                   <CardDescription className="text-pretty">
-                    SAMA is a trusted Original Design Manufacturer (ODM) and
-                    system integrator, delivering cutting-edge audio modules for
-                    diverse applications. With expertise in connected speakers
-                    and offline voice-enabled home appliances, we bring seamless
-                    functionality to everyday devices. Leveraging Edge AI and
-                    advanced voice technologies, our solutions ensure real-time
-                    performance, enhanced privacy, and superior user
-                    experiences. From smart speakers to intelligent home
-                    appliances, we redefine convenience and innovation. SAMA is
-                    committed to crafting reliable, scalable, and cost-effective
-                    solutions for the future. future.
+                    Innovation in Audio and Voice Technology SAMA is a trusted
+                    Original Design Manufacturer (ODM) and system integrator,
+                    delivering cutting-edge audio modules for diverse
+                    applications. Leveraging Edge AI and advanced voice
+                    technologies, our solutions ensure real-time performance,
+                    enhanced privacy, and superior user experiences. From smart
+                    speakers to intelligent home appliances, we redefine
+                    convenience and innovation. SAMA is committed to crafting
+                    reliable, scalable, and cost-effective solutions for the
+                    future. future.
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="text-muted-foreground mt-4 grid  gap-8">
@@ -89,14 +88,14 @@ const OurJourney: FC<OurJourneyProps> = ({}) => {
                           size={25}
                           className=" dark:text-white  mt-1 shrink-0"
                         />
-                        <div className="shrink-0">Smart Home Solutions</div>
+                        <div className="shrink-0">System Integration</div>
                       </div>
                       <div className="font-light flex gap-4 text-muted-foreground ">
                         <CheckCheck
                           size={25}
                           className=" dark:text-white  mt-1 shrink-0"
                         />
-                        <div className="">Edge AI Integration</div>
+                        <div className="">Field Testing</div>
                       </div>
                     </div>
                     <div className="">
@@ -105,21 +104,21 @@ const OurJourney: FC<OurJourneyProps> = ({}) => {
                           size={25}
                           className=" dark:text-white  mt-1 shrink-0"
                         />
-                        <div className="">Offline Functionality</div>
+                        <div className="">Audio Front End</div>
                       </div>
                       <div className="font-light flex gap-4 text-muted-foreground ">
                         <CheckCheck
                           size={25}
                           className=" dark:text-white  mt-1 shrink-0"
                         />
-                        <div className="">Noise Cancellation</div>
+                        <div className="">Edge AI</div>
                       </div>
                       <div className="font-light flex gap-4 text-muted-foreground ">
                         <CheckCheck
                           size={25}
                           className=" dark:text-white  mt-1 shrink-0"
                         />
-                        <div className="">Customizability</div>
+                        <div className="">Speech Recognition </div>
                       </div>
                     </div>
                   </div>
