@@ -5,8 +5,7 @@ export const PRODUCTS = [
     mainHeading: "Integrated Voice Module",
     paragraph1:
       "The Integrated Voice Module offers a seamless solution for offline voice control, with Aster, Bellis, and Dahlia, tailored for diverse needs. Requiring no complex mobile app configuration setup to connect to cloud, these modules enable effortless and intuitive voice control to your devices..",
-    paragraph2:
-      "The Integrated Voice Module offers offline voice processing, allowing reliable performance without internet dependency. It provides precise control for devices like fans and supports communication via UART or other protocols for seamless on device communication. Equipped with single-language support, it also offers the flexibility to upgrade to multiple languages. Advanced features like noise suppression and active gain control ensure clear voice recognition even in noisy environments. Use of digital microphone delivers high-quality audio input for optimal performance.",
+    paragraph2: "",
     image: "/circuit.png",
     imageTitle: "Integrated Voice Module",
     imageDesc:

@@ -14,7 +14,7 @@ const AboutUsDetails: FC<AboutUsDetailsProps> = ({}) => {
       </div>
       <Journey></Journey>
       <Mission></Mission>
-      <Careers></Careers>
+      {/* <Careers></Careers> */}
     </section>
   );
 };
