@@ -17,7 +17,6 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { cn } from "@/lib/utils";
-import { sendContactEmail } from "@/lib/mail";
 
 interface ContactProps {}
 
@@ -32,10 +31,21 @@ type formSchemaRequest = z.infer<typeof formSchema>;
 const Contact: FC<ContactProps> = ({}) => {
   const form = useForm<formSchemaRequest>({
     resolver: zodResolver(formSchema),
+    defaultValues: {
+      email: "",
+      message: "",
+      name: "",
+    },
   });
   const sendEmail = async (values: formSchemaRequest) => {
     const htmlmessage = `<div><p>Name:${values.name}</p> <p>Email:${values.email}</p><p>Message:${values.message}</p></div>`;
-    // await sendContactEmail(htmlmessage);
+
+    fetch("/api/mail", {
+      method: "POST",
+      body: JSON.stringify(htmlmessage),
+    })
+      .then((res) => res.json())
+      .catch((error) => console.log(error));
   };
 
   // console.log(form.watch("email"));

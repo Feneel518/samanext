@@ -3,9 +3,9 @@ export const APPLICATIONS = [
     id: 0,
     heading: "Smart Home Solutions",
     features: [
-      "Voice-controlled appliances: fans, ACs, TVs, and lights.",
-      "Seamless integration into IoT devices like smart speakers for audio streaming and playback.",
-      "Remote-free operation with multilingual support.",
+      "Effortless comfort: Control smart lighting and thermostats with your voice.",
+      "Seamless automation: Offline voice-enabled gateways manage all your devices.",
+      "Enhanced security: Voice authentication for smart locks ensures personalized access.",
     ],
     image: "/smartHome.jpg",
   },
@@ -13,7 +13,7 @@ export const APPLICATIONS = [
     id: 1,
     heading: "Consumer Electronics",
     features: [
-      "Streamline device management by replacing handheld remotes with seamless voice-controlled operation for IR-enabled systems.",
+      "Users can simply speak in elevators, their desired floor or destination using voice commands",
       "Integration into entertainment systems for IR-based device control.",
       "Bluetooth and Wi-Fi streaming capabilities.",
     ],
@@ -23,9 +23,9 @@ export const APPLICATIONS = [
     id: 2,
     heading: "Enterprise and Commercial Applications",
     features: [
-      "Customizable voice solutions for specific industries like hospitality and retail.",
-      "Simplifying device management in offices or shared spaces.",
-      "Integration into branded IoT products for better user engagement.",
+      "Elevators that listen: Command your floor with just your voice.",
+      "Smart warehouses: Voice-controlled forklifts and seamless inventory management.",
+      "Revolutionized manufacturing: Voice-powered control for conveyors and beyond.",
     ],
     image: "/industry.jpg",
   },
@@ -41,6 +41,26 @@ export const APPLICATIONS = [
   },
   {
     id: 4,
+    heading: "Hospitality",
+    features: [
+      "Hands-free comfort: Control room settings and services with voice.",
+      "Seamless ordering: Request room service effortlessly by voice.",
+      "Real-time translation: Speak your language, hotel staff understands.",
+    ],
+    image: "/hospitality.jpg",
+  },
+  {
+    id: 5,
+    heading: "Healthcare",
+    features: [
+      "Voice-controlled devices: Easily manage infusion pumps and ventilators with simple commands.",
+      "Efficient documentation: Dictate patient notes and reports for quick transcription.",
+      "Smart imaging: Navigate medical imaging software hands-free with voice commands.",
+    ],
+    image: "/health.jpg",
+  },
+  {
+    id: 6,
     heading: "Custom Solutions",
     features: [
       "Integration into niche devices for specific applications.",

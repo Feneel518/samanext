@@ -46,13 +46,13 @@ export default function RootLayout({
             <div className="absolute inset-0 size-[1420px] border top-2/3  left-40 -translate-x-1/2 -translate-y-1/2 border-blue-500/10 dark:border-blue-500/5 rounded-full shadow-[0_0_80px_inset] shadow-blue-500/10 dark:shadow-blue-500/5"></div>
             <div className="absolute  size-[1100px] bg-gradient-to-tl from-blue-300 to-transparent dark:bg-gradient-to-tl dark:from-blue-800/55  dark:to-transparent -bottom-2/3 -right-[500px]  blur-3xl rounded-full"></div>
           </div>
-          <div className="fixed bottom-4 flex items-center justify-center right-4 z-[1000] size-16 rounded-full bg-white">
+          {/* <div className="fixed bottom-4 flex items-center justify-center right-4 z-[1000] size-16 rounded-full bg-white">
             <div className="text-black sm:hidden">vsm</div>
             <div className="text-black max-sm:hidden md:hidden">sm</div>
             <div className="text-black max-md:hidden lg:hidden">md</div>
             <div className="text-black max-lg:hidden xl:hidden">lg</div>
             <div className="text-black max-xl:hidden ">xl</div>
-          </div>
+          </div> */}
           <Header></Header>
           <div className=" flex-1">{children}</div>
           <div className="place-content-end">
