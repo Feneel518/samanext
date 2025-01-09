@@ -103,7 +103,7 @@ export const Header = () => {
                   className="text-white dark:text-background"
                 ></Menu>
               </SheetTrigger>
-              <SheetContent className="dark:bg-gradient-to-b dark:from-foreground dark:to-background dark:text-white text-black h-full ">
+              <SheetContent className="z-[1000] dark:bg-gradient-to-b dark:from-foreground dark:to-background dark:text-white text-black h-full ">
                 <SheetHeader>
                   <SheetTitle className="text-white text-syne text-2xl">
                     SAMA Nextgen
