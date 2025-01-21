@@ -11,7 +11,7 @@ interface UseCaseProps {}
 
 const UseCase: FC<UseCaseProps> = ({}) => {
   return (
-    <section className="px-8 relative  overflow-x-hidden pb-20">
+    <section className="px-8 relative  overflow-x-hidden pb-20 flex items-center justify-center">
       <div className="absolute inset-0  border-black overflow-hidden ">
         <div className="absolute  size-[1100px] bg-gradient-to-tl from-blue-300 to-transparent dark:bg-gradient-to-tl dark:from-blue-800/55  dark:to-transparent -left-[720px] top-20  blur-3xl rounded-full opacity-50"></div>
         <div className="absolute  size-[1100px] bg-gradient-to-tl from-blue-300 to-transparent dark:bg-gradient-to-tl dark:from-blue-800/55  dark:to-transparent -right-[720px] top-80  blur-3xl rounded-full opacity-90"></div>
