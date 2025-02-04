@@ -42,12 +42,15 @@ export const Footer = () => {
             <p className="text-sm ">EmailID@gmail.com</p>
           </div>
         </div>
-        <div className="grid grid-cols-1 justify-between gap-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-20">
+        <div className="grid grid-cols-1 justify-between gap-8 md:grid-cols-2 lg:grid-cols-5 lg:gap-20">
           <Link href={"/products"} className=" uppercase tracking-wider">
             products
           </Link>
           <Link href={"/applications"} className=" uppercase tracking-wider">
             Applications
+          </Link>
+          <Link href={"/careers"} className=" uppercase tracking-wider">
+            Careers
           </Link>
           <Link href={"/our-story"} className=" uppercase tracking-wider">
             Who are we
