@@ -6,14 +6,13 @@ import { CAREERS } from "@/lib/Careers";
 import { FC } from "react";
 
 interface pageProps {
-  params: {
+  params: Promise<{
     id: number;
-  };
+  }>;
 }
 
 const page: FC<pageProps> = async ({ params }) => {
   const { id: careerId } = await params;
-  console.log(careerId);
 
   const career = CAREERS.find((id) => id.id == careerId);
 
