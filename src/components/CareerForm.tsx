@@ -134,14 +134,6 @@ const CareerForm: FC<CareerFormProps> = ({}) => {
             </span>
             <div className="ease-[cubic-bezier(0.19, 1, 0.22, 1)] absolute -left-[75px] -top-[50px] -z-10 h-[155px] w-8 rotate-[35deg] bg-black opacity-10 transition-all duration-500 group-hover:left-[120%] "></div>
           </button>
-
-          {/* <button>Submit</button>
-
- <div className="">
-   <ShinyButton type="submit" className="w-40 h-10 uppercase">
-     Submit
-   </ShinyButton>
- </div> */}
         </form>
       </Form>
     </div>
