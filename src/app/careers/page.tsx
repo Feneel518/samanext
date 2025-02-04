@@ -6,7 +6,7 @@ interface pageProps {}
 
 const page: FC<pageProps> = ({}) => {
   return (
-    <div className="">
+    <div className="overflow-hidden">
       <Careers></Careers>
       <CareerDetails></CareerDetails>
     </div>
