@@ -12,7 +12,7 @@ const AboutUsDetails: FC<AboutUsDetailsProps> = ({}) => {
       <div className="px-8">
         <OurJourney></OurJourney>
       </div>
-      <Journey></Journey>
+      {/* <Journey></Journey> */}
       <Mission></Mission>
       {/* <Careers></Careers> */}
     </section>
